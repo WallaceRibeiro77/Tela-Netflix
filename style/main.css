@@ -1,0 +1,125 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;
+    height: 70px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .logo{
+    margin-left: 5px;
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+}
+header .logo a{
+    text-decoration: none;
+    color: var(--vermelho);
+}
+header nav.menu-desktop{
+    margin-left: 300px;
+}
+header nav a{
+    text-decoration:none;
+    color:#AAA;
+    margin-right: 15px;
+}
+header .menu-mobile a{
+    display: none;
+}
+header nav.menu-mobile i{
+    font-size: 40px;
+    position: relative;
+    top: -40px;
+    left: 250px;
+}
+
+header nav a:hover{
+    color:#fff;
+    border-bottom:1px solid #E50914;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('/img/capa-sherlock.jpg');
+    height:500px;
+    background-size:100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .container{
+    width: 70%;
+}
+.filme-principal .descricao{
+  margin: 10px 0 40px 0;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 18px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin-top:35px;
+}
+.box-filme:hover{
+    transform:scale(1.1,1.1);
+    transition:.6s;
+}

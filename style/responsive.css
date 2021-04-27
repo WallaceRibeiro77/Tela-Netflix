@@ -1,0 +1,39 @@
+@media screen and (max-width: 450px){
+    header .logo{
+        font-size: 30px;
+    }
+    header .container{
+        height: 50px;
+    }
+}
+@media screen and (max-width:700px){
+    header .container{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    header nav.menu-desktop{
+        display: none;
+    }
+    header nav.menu-mobile{
+        display: flex;
+    }
+    header .container{
+        height: 55px;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    .descricao{
+        width: 70%;
+    }
+    header nav.menu-desktop{
+        margin-left: 0;
+    }
+}
